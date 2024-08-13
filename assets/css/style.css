@@ -50,20 +50,22 @@
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+    hsl(195, 58%, 77%), 
+    hsl(22, 100%, 68%)
   );
 
   /* solid */
 
-  --jet: hsl(0, 0%, 22%);
+  --jet: hsl(19, 22%, 37%);
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
   --eerie-black-2: hsl(240, 2%, 12%);
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --orange-yellow-crayola: hsl(19, 100%, 50%);
+  --cor-contato: hsl(22, 100%, 47%);
+
   --vegas-gold: hsl(45, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
@@ -359,10 +361,10 @@ main {
   top: -15px;
   right: -15px;
   border-radius: 0 15px;
-  font-size: 13px;
-  color: var(--orange-yellow-crayola);
+  font-size: 23px;
+  color: var(--cor-contato);
   background: var(--border-gradient-onyx);
-  padding: 10px;
+  padding: 15px;
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
   z-index: 1;
@@ -459,7 +461,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(59, 100%, 50%, 0.75);
+  background: hsla(23, 100%, 10%, 0.37);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
