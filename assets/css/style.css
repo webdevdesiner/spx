@@ -26,7 +26,7 @@
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(240, 1%, 25%) 3%, 
-    hsl(50, 100%, 9%) 97%
+    hsl(29, 98%, 36%) 97%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
@@ -63,7 +63,7 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(19, 100%, 50%);
+  --orange-yellow-crayola: hsl(24, 84%, 54%);
   --cor-contato: hsl(22, 100%, 47%);
 
   --vegas-gold: hsl(45, 54%, 58%);
