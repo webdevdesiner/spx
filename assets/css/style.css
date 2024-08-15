@@ -1890,3 +1890,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   width: 100%;
   height: auto;
 }
+
+.autorBlog
+{
+  font-size: 0.8em;
+  color: var(--white-1);
+  /* background: var(--orange-yellow-crayola); */
+}
