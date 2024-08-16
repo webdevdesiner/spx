@@ -157,3 +157,32 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+// >> java feito para coletar form >>>>>>>>
+
+const btnSend = document.querySelector("#btnSend");
+btnSend.addEventListener("click", (e)=> {
+  
+  e.preventDefault();
+  const fullname = document.querySelector("#fullname").value;
+  const email = document.querySelector("#email").value;
+  const message = document.querySelector("#message").value;
+  console.log(JSON.stringify({nome: fullname, email: email, mensagem: message
+
+  }));
+  fetch('http://localhost:3333/contatos', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json' // Define o tipo de conteúdo como JSON
+    },
+    body: JSON.stringify({nome: fullname, email: email, mensagem: message
+
+    })
+  }).then(response => response.json()) // Converte a resposta para JSON
+  .then(data => {
+    alert('Dados enviados com sucesso!'); // Mostra uma mensagem de sucesso
+    form.reset(); // Limpa o formulário
+  })
+  .catch(error => {
+    console.error('Erro:', error); // Exibe qualquer erro que ocorra
+  });
+})
