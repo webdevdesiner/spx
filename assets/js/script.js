@@ -186,3 +186,6 @@ btnSend.addEventListener("click", (e)=> {
     console.error('Erro:', error); // Exibe qualquer erro que ocorra
   });
 })
+
+
+
