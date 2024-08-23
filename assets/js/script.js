@@ -168,7 +168,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
   emailjs.sendForm('service_f53zchg', 'template_sznx99p', this)
       .then(function() {
-          alert('Mensagem enviada com sucesso! em breve Fernando te retornara');
+          alert('Mensagem enviada com sucesso para Fernando Guedes');
           document.getElementById('btnSend').disabled = true; // Desativa o botão após o envio
       }, function(error) {
           alert('Erro ao enviar a mensagem. Tente novamente por favor.');
