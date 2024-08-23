@@ -159,33 +159,18 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 // >> java feito para coletar form >>>>>>>>
 
-const btnSend = document.querySelector("#btnSend");
-btnSend.addEventListener("click", (e)=> {
-  
-  e.preventDefault();
-  const fullname = document.querySelector("#fullname").value;
-  const email = document.querySelector("#email").value;
-  const message = document.querySelector("#message").value;
-  console.log(JSON.stringify({nome: fullname, email: email, mensagem: message
+(function(){
+  emailjs.init("Rd4Z7RfIRQjlR1uQF"); // Inicialização do EmailJS com seu USER ID
+})();
 
-  }));
-  fetch('http://localhost:3333/contatos', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json' // Define o tipo de conteúdo como JSON
-    },
-    body: JSON.stringify({nome: fullname, email: email, mensagem: message
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Previne o recarregamento da página
 
-    })
-  }).then(response => response.json()) // Converte a resposta para JSON
-  .then(data => {
-    alert('Dados enviados com sucesso!'); // Mostra uma mensagem de sucesso
-    form.reset(); // Limpa o formulário
-  })
-  .catch(error => {
-    console.error('Erro:', error); // Exibe qualquer erro que ocorra
-  });
-})
-
-
-
+  emailjs.sendForm('service_f53zchg', 'template_sznx99p', this)
+      .then(function() {
+          alert('Mensagem enviada com sucesso! em breve Fernando te retornara');
+          document.getElementById('btnSend').disabled = true; // Desativa o botão após o envio
+      }, function(error) {
+          alert('Erro ao enviar a mensagem. Tente novamente por favor.');
+      });
+});

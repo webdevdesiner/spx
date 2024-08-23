@@ -1185,7 +1185,8 @@
 
           <h3 class="h3 form-title">Formulário de Contatos</h3>
 
-          <form id:="contact-form" action="#" class="form" data-form>
+          <!-- <form id:="contact-form" class="form" data-form> -->
+            <form id="contact-form" class="form" data-form>
 
             <div class="input-wrapper">
               <input id="to_name" type="text" name="to_name" class="form-input" placeholder="Nome completo" required data-form-input>
@@ -1193,7 +1194,7 @@
               <input id="email" type="email" name="email" class="form-input" placeholder="Email" required data-form-input>
             </div>
 
-            <textarea id="message" name="message" class="form-input" placeholder="Sua mensagem" required data-form-input></textarea>
+            <textarea id="messagem" name="messagem" class="form-input" placeholder="Sua mensagem" required data-form-input></textarea>
 
             <button id="btnSend" class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
@@ -1201,6 +1202,9 @@
             </button>
 
           </form>
+          <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+          <script src="./assets/js/script.js"></script>
+
 
         </section>
 
